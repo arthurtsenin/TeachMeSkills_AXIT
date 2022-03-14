@@ -1,0 +1,129 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+
+.tabs {
+	font-family: Open Sans;
+	width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.tabs__body {
+	margin: 60px 0 0 0;
+
+}
+
+.tabs__list {
+	height: 40px;
+}
+
+.tabs__list-options {
+	height: inherit;
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.list {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	text-transform: uppercase;
+	color: #333333;
+	padding: 10px 66.5px;
+}
+.tabs__list-options li:first-child{
+border: 1px solid #C6CBCD;
+padding: 1px 50.5px;
+border-bottom: 3px solid white;
+border-radius: 10px 5px 0 0;
+z-index: 1000;
+}
+
+.tabs__content {
+
+	display:flex;
+	justify-content: space-between;
+	border: 1px solid #C6CBCD;
+
+}
+
+.tabs__contetn-left {
+	margin: 40px 26.21px 50px 86.68px;
+	font-family: Raleway;
+}
+
+.tabs__content-left--title {
+	font-family: Open Sans ;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 33px;
+	color: #000000;
+	margin: 0 0 38px 0;
+	flex:1 1 auto
+}
+
+
+
+
+.tabs__contetnt-left--text {
+	font-size: 14px;
+	line-height: 16px;
+	color: #000000;
+	width: 482px;
+	height: 112px;
+}
+
+p {
+margin: 30px 0px;
+}
+
+
+button {
+	font-family:Open Sans ;
+	background: #EC7979;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	text-transform: capitalize;
+	color: #FFFFFF;
+	padding: 15px 50px;
+	margin: 38px 0 0 0;
+}
