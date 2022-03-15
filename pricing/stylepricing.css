@@ -52,7 +52,7 @@
 	}
 
 
-ul {
+.pricing__price ul {
 	display: flex;
 	flex-direction: column;
 }
