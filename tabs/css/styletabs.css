@@ -35,19 +35,17 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
-
-
 .tabs {
-	font-family: Open Sans;
+	font-family: 'Open Sans';
 	width: 1170px;
-	padding: 0 15px;
 	margin: 0 auto;
 }
 
 .tabs__body {
-	margin: 60px 0 0 0;
+	margin-top: 60px;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 100px;
 }
 
 .tabs__list {
@@ -62,7 +60,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	position: relative;
 }
 
-li {
+.tabs__list-options li {
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 19px;
@@ -70,17 +68,16 @@ li {
 	color: #333333;
 	padding: 10px 66.5px;
 }
+
 .tabs__list-options li:first-child{
-border: 1px solid #C6CBCD;
-padding: 10px 67px;
-
-border-bottom: 3px solid white;
-border-radius: 10px 5px 0 0;
-position: relative;
-top: 0;
-left: 0;
+	border: 1px solid #C6CBCD;
+	padding: 10px 67px;
+	border-bottom: 3px solid white;
+	border-radius: 10px 5px 0 0;
+	position: relative;
+	top: 0;
+	left: 0;
 }
-
 
 .tabs__content {
 	display:flex;
@@ -90,11 +87,10 @@ left: 0;
 
 .tabs__contetn-left {
 	margin: 40px 26.21px 50px 86.68px;
-	font-family: Raleway;
 }
 
 .tabs__content-left--title {
-	font-family: Open Sans ;
+	width: 510px;
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 33px;
@@ -103,24 +99,21 @@ left: 0;
 	flex:1 1 auto
 }
 
-
-
-
 .tabs__contetnt-left--text {
-	font-size: 14px;
-	line-height: 16px;
+	width: 570px;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
 	color: #000000;
-	width: 482px;
-	height: 112px;
 }
 
 p {
 margin: 30px 0px;
 }
 
-
-button {
-	font-family:Open Sans ;
+.tabs__content-left--button button {
 	background: #EC7979;
 	font-weight: 600;
 	font-size: 18px;
@@ -129,5 +122,14 @@ button {
 	text-transform: capitalize;
 	color: #FFFFFF;
 	padding: 15px 50px;
-	margin: 38px 0 0 0;
+	margin-top: 38px;
+	width: 270px;
+	height: 58px;
 }
+
+.tabs__content-right img {
+	width: 500px;
+	height: 500px;
+	object-fit: cover;
+}
+
