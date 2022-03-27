@@ -4,32 +4,59 @@ body {
 
 header {
 	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+header:before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 	height: 75px;
-	background: #000000;
+	background-color: black;
+	z-index:9999;
 }
 
-.header__menu {
+.header__menu_container {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
+	position: relative;
+	z-index: 9999;
+}
+
+.header__body {
 	height: 75px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
+	position: relative;
 }
 
 .header__logo {
-	margin-left: 115.28px;
 	font-size: 40px;
 	color: #FFFFFF;
-	display: inline-flex;
+	display: flex;
+	position: relative;
+	z-index: 3;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.header__logo:hover {
+	transform: rotate(360deg);
 }
 
 .logo {
 	display: block;
 	color: #EC7979;
+	position: relative;
+	z-index: 6;
 }
 
 .header__menu {
-	margin-right: 60px;
 	font-family: 'Open Sans';
 	font-weight: 600;
 	font-size: 14px;
@@ -39,40 +66,53 @@ header {
 }
 
 ul {
+	max-width: 600px;
 	list-style-type: none;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 }
 
 .header__menu__list {
-	width: 113px;
+	padding: 28px 40px;
 	cursor: pointer;
 }
 
+.header__menu__list:hover {
+	background-color: #EC7979;
+}
+
+.header__menu__list:active{
+	background-color: #AB4949;
+}
+
 .axit-download {
-	overflow: hidden;
-	height: 951px;
+	display: flex;
+	height: 100%;
 	width: 100%;
-	background: url(../assets/city.svg) 0 0/cover no-repeat;
+	background: url(../assets/city.svg) 0 0/cover no-repeat fixed;
 	position: relative;
 	z-index: 3;
 }
 .axit-download::before {
+	display: block;
 	content: "";
 	background: rgba(0, 0, 0, 0.7);
 	width: 100%;
+	height: 100%;
 	position: absolute;
 	z-index: -1;
-	height: 951px;
 }
 
 .axit-download__container {
-	width: 1170px;
+	max-width: 1170px;
 	margin: 0 auto;
+	padding: 0 15px;
 	padding-top: 208px;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+	flex: 1 1 auto;
+	flex-wrap: wrap;
 }
 
 .axit-download__logo {
@@ -84,7 +124,7 @@ ul {
 }
 
 .axit-download__text {
-	width: 670px;
+	max-width: 670px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -115,11 +155,9 @@ ul {
 	color: #FFFFFF;
 	width: 270px;
 }
-.axit-download__button {
-	font-family: 'Open Sans';
-}
 
 .axit-download__button {
+	font-family: 'Open Sans';
 	background: rgba(0, 0, 0, 0.2);
 	border: 1px solid white;
 	font-weight: 600;
@@ -134,6 +172,24 @@ ul {
 	margin-bottom: 185px;
 }
 
+.axit-download__button:hover {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: capitalize;
+	color: #EC7979;
+	border: 2px solid #EC7979;
+}
+.axit-download__button:active {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: capitalize;
+	color: white;
+	background: #AB4949;
+	border: 2px solid #AB4949;
+}
+
 .axit-download__form {
 	font-family: 'Open Sans';
 	background-color: white;
@@ -144,6 +200,7 @@ ul {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 50px;
 }
 
 .axit-download__info {
@@ -174,7 +231,6 @@ ul {
 	display: block;
 	width: 370px;
 	padding: 20px 0;
-
 }
 
 .axit-download__info input::placeholder {
@@ -197,6 +253,17 @@ ul {
 	color: #FFFFFF;
 }
 
+.axit-start:hover {
+	background: #AB4949;
+	border-radius: 0px 0px 10px 10px;
+	border:1px solid #AB4949;
+}
+
+.axit-start:active {
+	background: #EC7979;
+	border-radius: 0px 0px 10px 10px;
+}
+
 .axit-download__foot {
 	background: #F8EFEF;
 	width: 100%;
@@ -206,15 +273,17 @@ ul {
 
 .foot__container {
 	height: inherit;
-	width: 1170px;
+	max-width: 1170px;
 	margin: 0 auto;
+	padding: 0 15px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .foot__text {
 	height: 100px;
-	width: 470px;
+	max-width: 470px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -237,7 +306,7 @@ ul {
 }
 
 .stylish {
-	background: url(../assets/image.svg) 0 0/cover no-repeat;
+	background: url(../assets/image.svg) 0 0/cover no-repeat fixed;
 	position: relative;
 	z-index: 3;
 	overflow: hidden;
@@ -255,7 +324,7 @@ ul {
 }
 
 .stylish__body {
-	width: 1170px;
+	max-width: 1170px;
 	padding: 50px 15px;
 	margin: 0 auto;
 }
@@ -309,6 +378,23 @@ ul {
 	margin-top: 73px;
 	cursor: pointer;
 }
+.download button:hover {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: capitalize;
+	color: #EC7979;
+	border: 2px solid #EC7979;
+}
+.download button:active {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: capitalize;
+	color: white;
+	background: #AB4949;
+	border: 2px solid #AB4949;
+}
 
 .contact__header {
 	margin-top: 110px;
@@ -343,19 +429,21 @@ ul {
 }
 
 .contact__form {
-	width: 1170px;
+	max-width: 1200px;
+	padding: 0 15px;
 	margin: 0 auto;
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
 	margin-top: 89px;
+	flex-wrap: wrap;
 }
 
 .contact__info {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	width: 571px;
+	max-width: 571px;
 	height: 200px;
 }
 
@@ -366,10 +454,18 @@ ul {
 	border: 1px solid white;
 	border-bottom: 1px solid #BDBDBD;
 	padding: 1px 0 16px 0;
-	margin-bottom: 55px;
+	margin-bottom: 30px;
 }
 
-input textarea::placeholder {
+input::placeholder {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	color: #BDBDBD;
+	font-family: 'Open Sans';
+}
+
+textarea::placeholder {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 19px;
@@ -380,10 +476,10 @@ input textarea::placeholder {
 textarea {
 	outline: none;
 	width: 569px;
-	height: 215px;
-	display: flex;
+	height: 163px;
 	border: 1px solid white;
 	border-bottom: 1px solid #BDBDBD;
+	resize: none;
 }
 
 .contact__button-center {
@@ -392,7 +488,7 @@ textarea {
 	margin-bottom: 50px;
 }
 
-.contact__button{
+.contact__button {
 	font-family: 'Open Sans';
 	background: #EC7979;
 	font-weight: 600;
@@ -407,8 +503,26 @@ textarea {
 	color: #FFFFFF;
 }
 
+.contact__button:hover {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: capitalize;
+	color: white;
+	background: #AB4949;
+}
+
+.contact__button:active {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: capitalize;
+	color: white;
+	background: #EC7979;
+}
+
 .footer {
-	width: 100;
+	width: 100%;
 	padding: 40px 0;
 	background: #000000;
 	display: flex;
@@ -424,9 +538,426 @@ textarea {
 
 .footer__copyright {
 	margin-top: 32px;
-
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 21px;
 	color: rgba(255, 255, 255, 0.5);
 }
+
+@media (max-width:1024px){
+	.header__menu_container {
+		max-width: 888.72px;
+	}
+	.header__menu {
+		font-family: 'Open Sans';
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 19px;
+		text-transform: capitalize;
+		color: white;
+	}
+		
+	.axit-download__container {
+		margin-left: 115.28px;
+		max-width: 888.72px;
+	}
+
+	.axit-download__logo {
+		margin-bottom: 54.08px;
+	}
+
+	.axit-download__text {
+		max-width: 454.36px;
+	}
+
+	.axit-download__title {
+		font-size: 36px;
+		line-height: 42px;
+	}
+
+	.axit-download__line {
+		margin-top: 41.49px;
+		width: 115.28px;
+	}
+
+	.axit-download__subtitle {
+		margin-top: 31px;
+		font-size: 14px;
+		line-height: 16px;
+		width: 183.1px;
+	}
+
+	.axit-download__button {
+		width: 183.1px;
+		height: 50px;
+		margin-top: 31.32px;
+		cursor: pointer;
+		margin-bottom: 131.89px;
+	}
+
+	.axit-download__form {
+		width: 398px;
+		height: 450px;
+		border-radius: 10px;
+	}
+
+	.axit-download__form h2 {
+		padding-top: 20px;
+		font-size: 18px;
+		line-height: 25px;
+	}
+
+	.axit-download__info input {
+		width: 298px;
+	}
+
+	.axit-start {
+		width: 397.1px;
+	}
+
+	.stylish {
+		height: 358px;
+	}
+	
+	.stylish__body {
+		max-width: 992px;
+	}
+	
+	.stylish__title {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	
+	.stylish__line {
+		margin-top: 50px;
+		width: 142px;
+	}
+	
+	.stylish__subtitle {
+		margin-top: 32px;
+		font-weight: 400;
+		font-size: 14px;
+	}
+	
+	.download button {
+		font-size: 18px;
+		line-height: 25px;
+		width: 318px;
+		height: 58px;
+		margin-top: 32px;
+	}
+	.contact {
+		padding: 0;
+	}
+	
+	.contact__title {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	
+	.contact__line {
+		margin-top: 50px;
+		width: 142px;
+	}
+	
+	.contact__subtitle {
+		margin-top: 40px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+	
+	.contact__form {
+		max-width: 992px;
+		margin-top: 72px;
+	}
+	
+	.contact__info {
+		max-width: 475px;
+	}
+	
+	.contact__info input {
+		width: 475px;
+	}
+	
+	textarea {
+		outline: none;
+		width: 475px;
+		height: 165px;
+	}
+	
+	.contact__button {
+		width: 318px;
+		height: 58px;
+	}
+	
+	.footer__copyright {
+		font-size: 16px;
+	}
+}
+
+
+@media (max-width:320px) {
+	.header__burger {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		position: relative;
+		z-index: 3;
+	}
+	.header__burger span {
+		position: absolute;
+		background-color: white;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+	}
+	.header__burger::before{
+		content: "";
+		background-color: white;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		top: 0;
+	}
+
+	.header__burger:after{
+		content: "";
+		background-color: white;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		bottom: 0;
+	}
+	.header__menu {
+		text-align: center;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.254);
+		padding-top: 75px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.header__menu:before {
+		content: "";
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 75px;
+		background-color: black;
+		z-index:9999;
+	}
+
+	.header__menu__list {
+		font-size: 25px;
+		padding: 45px 0;
+		cursor: pointer;
+	}
+
+
+	.axit-download__container {
+		max-width: 320px;
+		margin: 0;
+		padding: 140px 15px 50px 15px;
+	}
+
+	.axit-download__logo {
+		display: none;
+	}
+
+	.axit-download__text {
+		max-width: 288px;
+		text-align: center;
+	}
+
+	.axit-download__title {
+		font-size: 36px;
+		line-height: 42px;
+		margin-bottom: 42px;
+	}
+
+	.axit-download__line {
+		width: 134px;
+		margin: 0 auto;
+	}
+
+	.axit-download__subtitle {
+		margin: 42px 0;
+		font-size: 14px;
+		line-height: 16px;
+		width: 288px;
+	}
+
+	.axit-download__button {
+		font-size: 18px;
+		line-height: 25px;
+		width: 288px;
+		margin-bottom: 56px;
+	}
+
+	.axit-download__form {
+		width: 288px;
+		height: 381px;
+		margin-bottom: 0;
+	}
+
+	.axit-download__form h2 {
+		font-size: 14px;
+		line-height: 19px;
+	}
+
+	.axit-download__info input {
+		width: 240px;
+		padding: 20px 0;
+	}
+
+	.axit-start {
+		width: 288px;
+		height: 60px;
+	}
+
+	.axit-download__foot {
+		height: 190px;
+	}
+
+	.foot__container {
+		max-width: 320px;
+		margin: 0 auto;
+		display: block;
+		padding: 0 15px;
+	}
+
+	.foot__text {
+		max-width: 288px;
+		text-align: center;
+	}
+
+	.foot__title{
+		margin-top: 31px;
+		font-size: 18px;
+		line-height: 25px;
+		margin-bottom: 13px;
+	}
+
+	.foot__subtitle {
+		font-size: 14px;
+		line-height: 16px;
+		margin-bottom: 34.17px;
+		text-align: center;
+	}
+
+	.footer__icons {
+		width: 300px;
+	;
+	}
+	.footer__icons img {
+		width: 23px;
+		margin-top: 30px
+	}
+
+	.stylish__body {
+		max-width: 320px;
+		padding: 0 15px;
+		margin: 0 auto;
+	}
+
+	.stylish__title {
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	.stylish__line {
+		margin-top: 70px;
+		width: 134px;
+	}
+
+	.stylish__subtitle {
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.download button {
+		width: 287px;
+		height: 50px;
+	}
+
+	.contact__header {
+		margin: 40px 0 0 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.contact__title {
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	.contact__line {
+		margin-top: 70px;
+		width: 134px;
+	}
+
+	.contact__subtitle {
+		margin-top: 40px;
+		font-size: 14px;
+		line-height: 16px;
+		text-align: center;
+	}
+
+	.contact__form {
+		max-width: 320px;
+		padding: 0 15px;
+	}
+
+	.contact__info {
+		max-width: 288px;
+		height: 200px;
+	}
+
+	.contact__info input {
+		width: 288px;
+	}
+
+	textarea {
+		outline: none;
+		width: 288px;
+		height: 163px;
+		border: 1px solid white;
+		border-bottom: 1px solid #BDBDBD;
+		resize: none;
+	}
+
+	.contact__button-center {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 50px;
+	}
+
+	.contact__button {
+		width: 288px;
+		height: 50px;
+	}
+	.footer {
+		padding-top: 37px 0 45px 0;
+
+	}
+
+	.footer__icons {
+		width: 288px;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+

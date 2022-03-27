@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href=".//all/css/style.css">
 	<link rel="stylesheet" href="./customers/css/stylecustomers.css">
 	<link rel="stylesheet" href="./awesome/css/style.css">
@@ -17,19 +18,23 @@
 </head>
 
 <body>
-
 	<header>
 		<section class="header">
-			<section class="header__menu">
-				<section class="header__logo">AX <span class="logo">IT</span></section>
-				<ul class="header__menu">
-					<li class="header__menu__list">features</li>
-					<li class="header__menu__list">About</li>
-					<li class="header__menu__list">Pricing</li>
-					<li class="header__menu__list">Reviews</li>
-					<li class="header__menu__list">Contact</li>
-				</ul>
-			</section>
+			<section class="header__menu_container">
+				<section class="header__body">
+					<section class="header__logo">AX <span class="logo">IT</span></section>
+					<section class="header__burger">
+						<span></span>
+					</section>
+					<ul class="header__menu">
+						<li class="header__menu__list">features</li>
+						<li class="header__menu__list">About</li>
+						<li class="header__menu__list">Pricing</li>
+						<li class="header__menu__list">Reviews</li>
+						<li class="header__menu__list">Contact</li>
+					</ul>
+				</section>
+			</section>	
 		</section>
 	</header>
 
@@ -46,14 +51,14 @@
 				<h2 class="try">Try Your <span class="free">FREE</span> Trial Today</h2>
 				<section class="axit-download__info">
 					<input placeholder="Name" type="text">
-					<input placeholder="Email" type="text">
-					<input placeholder="Password" type="text">
+					<input placeholder="Email" type="email">
+					<input placeholder="Password" type="password">
 				</section>
 				<button class="axit-start">Get Started</button>
 			</section>
 		</section>
 	</section>
-
+	
 	<section class="axit-download__foot">
 		<section class="foot__container">
 			<section class="foot__text">
@@ -74,7 +79,7 @@
 			</section>
 		</section>
 	</section>
-
+	
 	<div class="tabs">
 		<div class="tabs__body">
 			<div class="tabs__list">
@@ -100,7 +105,7 @@
 			</div>
 		</div>
 	</div>
-
+	
 	<div class="awesome">
 		<div class="awesome__body">
 			<div class="awesome__header">
@@ -116,8 +121,8 @@
 						<div class="box-awesome__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</div>
 					</div>
 				</div>
-				<div class="about__awesome">
-					<div class="box-about">
+				<div class="awesome__column">
+					<div class="box-awesome">
 					<div class="box-awesome__icon"><img src="./awesome/assets/02.png" alt=""></div>
 					<div class="box-awesome__title">Thoughtful Design</div>
 					<div class="box-awesome__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</div>
@@ -130,7 +135,7 @@
 			</div>
 		</div>
 	</div>
-
+	
 	<div class="pricing">
 		<div class="pricing__body">
 			<div class="pricing__header">
@@ -138,7 +143,7 @@
 				<div class="pricing__line"></div>
 				<div class="pricing__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 			</div>
-
+	
 			<div class="pricing__row">
 				<div class="pricing__column">
 					<ul class="pricing__price">
@@ -182,7 +187,7 @@
 			</div>
 		</div>
 	</div>
-
+	
 	<div class="customers">
 		<div class="customers__body">
 			<div class="customers__header">
@@ -239,7 +244,7 @@
 			</div>
 		</div>
 	</div>
-
+	
 	<section class="stylish">
 		<section class="stylish__body">
 			<section class="stylish__header">
@@ -250,7 +255,7 @@
 			</section>
 		</section>
 	</section>
-
+	
 	<section class="contact">
 		<section class="contact__header">
 			<section class="contact__title">contact us</section>
@@ -269,7 +274,7 @@
 		</section>
 		<section class="contact__button-center"><button class="contact__button">Send Message</button></section>
 	</section>
-
+	
 	<footer class="footer">
 			<section class="footer__icons">
 				<a href="#"><img src="./all/assets/icons/facebook_icon.svg" alt=""></a>
