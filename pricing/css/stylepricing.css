@@ -1,24 +1,16 @@
-
-
 .pricing {
+	font-family: 'Raleway';
 	background: #F5F5F5;
 	padding: 50px;
 }
 
 .pricing__body {
-	width: 1170px;
-	padding: 0 15px;
+	max-width: 1170px;
 	margin: 0 auto;
-	font-family: 'Raleway';
 	font-weight: 400;
-	}
-	
-	.pricing__header {
-		margin: 0 0 0 0;
-	}
-	
-	.pricing__title {
-	font-family: 'Raleway';
+}
+
+.pricing__title {
 	font-size: 36px;
 	line-height: 42px;
 	text-transform: uppercase;
@@ -28,15 +20,15 @@
 	text-align: center;
 	}
 	
-	.pricing__line {
+.pricing__line {
 	width: 170px;
 	height: 0;
 	border: 1px solid #EC7979;
-	margin: 60px auto 30px;
-	}
+	margin: 60px auto 50px;
+}
 	
-	.pricing__subtitle {
-	width: 1170px;
+.pricing__subtitle {
+	max-width: 1170px;
 	font-size: 18px;
 	line-height: 21px;
 	color: #86878B;
@@ -44,39 +36,39 @@
 }
 
 
-	.pricing__row {
+.pricing__row {
 	margin-bottom: 20px;
 	display: flex;
 	justify-content: space-between;
-	flex: 0 1 33.333;
-	}
+	flex-wrap: wrap;
+}
 
 
-.pricing__price ul {
+.pricing__price {
 	display: flex;
 	flex-direction: column;
+
 }
 
 .pricing__column {
-	width: 370px;
+	max-width: 370px;
 	margin-top: 79px;
 	position: relative;
-
 }
 
 .pricing__column:hover {
 	bottom: 45px;
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-	}
+	cursor: pointer;
+}
 
-	.pricing__price li {	
+.pricing__price li {	
 	background: #FFFFFF;	
 	border-top: 2px solid #F5F5F5;;
 	border-left: 2px solid #F5F5F5;
 	border-right: 2px solid #F5F5F5;
 	padding: 15px 0;
 	display: block;
-	font-family: 'Raleway';
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 21px;
@@ -84,6 +76,7 @@
 	text-transform: capitalize;
 	color: #86878B;
 	font-style: normal;
+	width: 370px;
 }
 
 .pricing__price li:first-child {
@@ -104,7 +97,6 @@
 	line-height: 42px;
 	text-align: center;
 	color: #FFFFFF;
-	font-family: 'Raleway';
 	background: #333333;
 }
 .pricing__price li:nth-child(3){
@@ -115,14 +107,77 @@
 	line-height: 21px;
 	text-align: center;
 	color: rgba(255, 255, 255, 0.5);
-	font-family: 'Raleway';
 }
-
 
 .pricing__price li:last-child {
 	border-bottom: 2px solid #F5F5F5;;
 }
 
 
+@media (max-width:1024px) {
+	.pricing {
+	padding: 18px;
+	}
+	.pricing__body {
+		max-width: 1170px;
+	}
+	
+	.pricing__title {
+		font-size: 24px;
+		line-height: 28px;
+	}
+		
+	.pricing__line {
+		width: 143px;
+	}
+		
+	.pricing__subtitle {
+		max-width: 992px;
+		font-size: 14px;
+		line-height: 16px;
+	}
 
+	.pricing__column {
+		max-width: 317px;
+		margin-top: 49.74px;
+	}
+	
+	.pricing__price li {	
+		width: 317px;
+	}
+}
+
+@media (max-width:320px) {
+	.pricing {
+		padding: 18px;
+	}
+	.pricing__body {
+		max-width: 320px;
+	}
+
+	.pricing__title {
+		font-size: 24px;
+		line-height: 28px;
+		padding: 0;
+	}
+
+	.pricing__line {
+		width: 134px;
+	}
+		
+	.pricing__subtitle {
+		max-width: 320px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.pricing__column {
+		max-width: 288px;
+		margin-top: 49.74px;
+	}
+	
+	.pricing__price li {	
+		width: 288px;
+	}
+}
 
