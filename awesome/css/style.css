@@ -1,9 +1,9 @@
 .awesome__body {
-max-width: 1170px;
-padding: 0 15px;
-margin: 0 auto;
-font-family: 'Raleway';
-font-weight: 400;
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+	font-family: 'Raleway';
+	font-weight: 400;
 }
 
 .awesome__header {
@@ -36,15 +36,14 @@ font-weight: 400;
 
 .awesome__row {
 	display: flex;
-	margin: 0 -15px;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	align-items:center;
 }
 
 .awesome__column {
 	max-width: 370px;
-	padding: 0 15px;
 	margin-bottom: 58px;
+	flex-direction: 1 1 33.333%;
 }
 
 .box-awesome__icon {
@@ -122,8 +121,14 @@ color: #000000;
 		line-height: 16px;
 		}
 }
+@media (max-width:960px) {
+	.awesome__row {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 
-@media (max-width:320px) {
+}
+@media (max-width:400px) {
 	.awesome__body {
 		max-width: 320px;
 	}

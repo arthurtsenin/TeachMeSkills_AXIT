@@ -21,7 +21,7 @@ header:before {
 }
 
 .header__menu_container {
-	max-width: 1230px;
+	max-width: 1170px;
 	margin: 0 auto;
 	padding: 0 15px;
 	position: relative;
@@ -45,6 +45,7 @@ header:before {
 	cursor: pointer;
 	transition: 0.4s;
 }
+
 .header__logo:hover {
 	transform: rotate(360deg);
 }
@@ -63,17 +64,20 @@ header:before {
 	line-height: 19px;
 	text-transform: capitalize;
 	color: white;
+	max-width: 600px;
+	margin: 0 15px;
 }
 
 ul {
-	max-width: 600px;
 	list-style-type: none;
 	display: flex;
 	justify-content: space-between;
 }
 
 .header__menu__list {
-	padding: 28px 40px;
+	padding: 28px 25px;
+
+	max-width: 113px;
 	cursor: pointer;
 }
 
@@ -111,8 +115,6 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	flex: 1 1 auto;
-	flex-wrap: wrap;
 }
 
 .axit-download__logo {
@@ -138,11 +140,13 @@ ul {
 	align-items: center;
 	text-transform: uppercase;
 	color: #FFFFFF;
+	max-width: 640px;
 }
 
 .axit-download__line {
 	margin-top: 70px;
-	width: 170px;
+	max-width: 170px;
+	padding: 0 95px;
 	height: 0px;
 	border: 1px solid #FFFFFF;
 	opacity: 0.5;
@@ -153,7 +157,7 @@ ul {
 	font-size: 18px;
 	line-height: 21px;
 	color: #FFFFFF;
-	width: 270px;
+	max-width: 250px;
 }
 
 .axit-download__button {
@@ -165,7 +169,8 @@ ul {
 	line-height: 25px;
 	text-transform: capitalize;
 	color: #FFFFFF;
-	width: 270px;
+	max-width: 270px;
+	padding: 0 75px ;
 	height: 58px;
 	margin-top: 73px;
 	cursor: pointer;
@@ -193,22 +198,25 @@ ul {
 .axit-download__form {
 	font-family: 'Open Sans';
 	background-color: white;
-	width: 470px;
-	height: 450px;
+	max-width: 470px;
 	border-radius: 10px;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	margin-bottom: 50px;
+	justify-content: space-between;
+	padding-top: 20px;
+	height: 450px;
+	margin-left: 15px;
 }
 
 .axit-download__info {
-	flex: 1 1 auto;
+	padding: 0 50px;
+	flex: 0 1 auto;
 }
 
 .axit-download__form h2 {
-	padding-top: 20px;
+	padding: 0 50px;
+	text-align: center;
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 33px;
@@ -220,37 +228,21 @@ ul {
 	color: #EC7979;;
 }
 
-.axit-download__info {
-	margin-top: 55px;
-}
-
-.axit-download__info input {
-	outline: none;
-	border: 1px solid white;
+.axit-download__info div {
 	border-bottom: 1px solid #BDBDBD;
-	display: block;
-	width: 370px;
-	padding: 20px 0;
-}
-
-.axit-download__info input::placeholder {
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 19px;
-	color: #BDBDBD;
+	margin-bottom: 35px;
 }
 
 .axit-start {
-	width: 468px;
+	width: 100%;
 	height: 60px;
 	background: #EC7979;
-	width: 100%;
 	border-radius: 0px 0px 10px 10px;
-	border:1px solid #EC7979;
+	border: 1px solid #EC7979;
+	color: #FFFFFF;
 	position: relative;
 	top: 0;
 	left: 0;
-	color: #FFFFFF;
 }
 
 .axit-start:hover {
@@ -264,10 +256,11 @@ ul {
 	border-radius: 0px 0px 10px 10px;
 }
 
+
 .axit-download__foot {
+	padding: 15px 0;
 	background: #F8EFEF;
 	width: 100%;
-	height: 140px;
 	margin-bottom: 99px;
 }
 
@@ -279,7 +272,6 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	flex-wrap: wrap;
 }
 .foot__text {
 	height: 100px;
@@ -373,7 +365,8 @@ ul {
 	text-transform: capitalize;
 	color: #FFFFFF;
 	font-family: 'Open Sans';
-	width: 370px;
+	max-width: 370px;
+	padding: 10px 70px;
 	height: 58px;
 	margin-top: 73px;
 	cursor: pointer;
@@ -402,6 +395,7 @@ ul {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
+	text-align: center;
 }
 
 .contact__title {
@@ -411,6 +405,7 @@ ul {
 	line-height: 42px;
 	text-transform: uppercase;
 	color: #000000;
+
 }
 
 .contact__line {
@@ -429,59 +424,42 @@ ul {
 }
 
 .contact__form {
-	max-width: 1200px;
+	max-width: 1170px;
 	padding: 0 15px;
 	margin: 0 auto;
-	display: flex;
-	align-items: flex-start;
-	justify-content: space-between;
 	margin-top: 89px;
-	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
 }
 
 .contact__info {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	max-width: 571px;
-	height: 200px;
+	width: 50%;
 }
 
-.contact__info input {
-	display: inline;
-	width: 571px;
-	outline: none;
+.contact__info div {
+	padding: 5px 0 25px 0;
 	border: 1px solid white;
 	border-bottom: 1px solid #BDBDBD;
-	padding: 1px 0 16px 0;
 	margin-bottom: 30px;
 }
 
-input::placeholder {
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 19px;
-	color: #BDBDBD;
-	font-family: 'Open Sans';
+.contact__info input {
+	width: 100%;
 }
 
-textarea::placeholder {
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 19px;
-	color: #BDBDBD;
-	font-family: 'Open Sans';
-}
-
-textarea {
+.contact__message {
+	height: 215px;
+	margin-left: 20px;
+	width: 50%;
 	outline: none;
-	width: 569px;
-	height: 163px;
 	border: 1px solid white;
 	border-bottom: 1px solid #BDBDBD;
-	resize: none;
-}
 
+}
+.contact__message textarea {
+	resize: none;
+	width: 100%;
+}
 .contact__button-center {
 	display: flex;
 	justify-content: center;
@@ -496,9 +474,9 @@ textarea {
 	line-height: 25px;
 	text-align: center;
 	text-transform: capitalize;
-	padding: 15px 50px;
+	padding: 15px 70px;
 	margin-top: 38px;
-	width: 370px;
+	max-width: 370px;
 	height: 58px;
 	color: #FFFFFF;
 }
@@ -531,9 +509,13 @@ textarea {
 }
 
 .footer__icons {
-	width: 500px;
+	max-width: 600px;
 	display: flex;
 	justify-content: space-between;
+}
+
+.footer__icons img {
+	max-width: 45pxs;
 }
 
 .footer__copyright {
@@ -544,83 +526,91 @@ textarea {
 	color: rgba(255, 255, 255, 0.5);
 }
 
-@media (max-width:1024px){
-	.header__menu_container {
-		max-width: 888.72px;
-	}
-	.header__menu {
-		font-family: 'Open Sans';
-		font-weight: 600;
-		font-size: 14px;
-		line-height: 19px;
-		text-transform: capitalize;
-		color: white;
-	}
-		
+@media (max-width:1024px) {
 	.axit-download__container {
-		margin-left: 115.28px;
-		max-width: 888.72px;
+		max-width: 1024px;
 	}
-
-	.axit-download__logo {
-		margin-bottom: 54.08px;
-	}
-
+	
 	.axit-download__text {
-		max-width: 454.36px;
+		max-width: 454px;
+		margin-left: 115px;
 	}
-
+	.axit-download__logo {
+		margin-bottom: 54px;
+	}
+	
 	.axit-download__title {
 		font-size: 36px;
 		line-height: 42px;
 	}
-
+	
 	.axit-download__line {
-		margin-top: 41.49px;
-		width: 115.28px;
+		margin-top: 20px;
+		max-width: 115px;
 	}
-
+	
 	.axit-download__subtitle {
-		margin-top: 31px;
+		margin-top: 32px;
 		font-size: 14px;
 		line-height: 16px;
-		width: 183.1px;
 	}
-
+	
 	.axit-download__button {
-		width: 183.1px;
-		height: 50px;
-		margin-top: 31.32px;
-		cursor: pointer;
-		margin-bottom: 131.89px;
+		margin-top: 40px;
+		margin-bottom: 100px;
 	}
+	
 
+	
 	.axit-download__form {
-		width: 398px;
-		height: 450px;
-		border-radius: 10px;
+		max-width: 398px;
 	}
-
+	
+	.axit-download__info {
+		padding: 0 20px;
+	}
+	
 	.axit-download__form h2 {
-		padding-top: 20px;
 		font-size: 18px;
 		line-height: 25px;
 	}
 
-	.axit-download__info input {
-		width: 298px;
-	}
 
-	.axit-start {
-		width: 397.1px;
+	.foot__container {
+		max-width: 1024px;
+		padding: 10px 15px;
 	}
-
-	.stylish {
-		height: 358px;
+	.foot__text {
+		height: 100px;
+		padding: 13px 0;
+		max-width: 402px;
 	}
 	
+	.foot__title{
+		font-size: 18px;
+		line-height: 25px;
+	}
+	
+	.foot__subtitle {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	
+	.footer__icons img {
+		margin-right: 20px;
+	}
+		.stylish {
+			height: 330px;
+		}
+	
 	.stylish__body {
-		max-width: 992px;
+		max-width: 1024px;
+		padding: 20px 15px;
+
+	}
+	
+	.stylish__header {
+		margin-top: 20px;
 	}
 	
 	.stylish__title {
@@ -629,75 +619,154 @@ textarea {
 	}
 	
 	.stylish__line {
-		margin-top: 50px;
-		width: 142px;
+		margin-top: 40px;
+		width: 170px;
 	}
 	
 	.stylish__subtitle {
-		margin-top: 32px;
-		font-weight: 400;
-		font-size: 14px;
-	}
-	
-	.download button {
-		font-size: 18px;
-		line-height: 25px;
-		width: 318px;
-		height: 58px;
-		margin-top: 32px;
-	}
-	.contact {
-		padding: 0;
-	}
-	
-	.contact__title {
-		font-size: 24px;
-		line-height: 28px;
-	}
-	
-	.contact__line {
-		margin-top: 50px;
-		width: 142px;
-	}
-	
-	.contact__subtitle {
 		margin-top: 40px;
 		font-size: 14px;
 		line-height: 16px;
 	}
 	
+	.download button {
+		margin-bottom: 40px;
+	}
+}
+
+@media (max-width:960px) {
+	.axit-download__container {
+		max-width: 1024px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	.axit-download__text {
+		max-width: 454px;
+		margin: 0 auto;
+		align-items: center;
+		text-align: center;
+
+
+	}
+	.axit-download__logo {
+		margin-bottom: 54px;
+	}
+	
+	.axit-download__title {
+		font-size: 36px;
+		line-height: 42px;
+	}
+	
+	.axit-download__line {
+		margin-top: 20px;
+		max-width: 115px;
+	}
+	
+	.axit-download__subtitle {
+		margin-top: 32px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+	
+	.axit-download__button {
+		margin-top: 40px;
+		margin-bottom: 30px;
+	}
+	
+	.axit-download__form {
+		max-width: 398px;
+		margin-bottom: 20px;
+	}
+	
+	.axit-download__info {
+		padding: 0 20px;
+	}
+	
+	.axit-download__form h2 {
+		font-size: 18px;
+		line-height: 25px;
+	}
+
+	.foot__container {
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+		max-width: 1024px;
+		padding: 10px 15px;
+	}
+	.foot__text {
+		height: 100px;
+		padding: 13px 0;
+		max-width: 402px;
+	}
+	
+	.foot__title{
+		font-size: 18px;
+		line-height: 25px;
+	}
+	
+	.foot__subtitle {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	
+
+		.stylish {
+			height: 330px;
+		}
+	
+	.stylish__body {
+		max-width: 1024px;
+		padding: 20px 15px;
+	}
+	
+	.stylish__header {
+		margin-top: 20px;
+	}
+	
+	.stylish__title {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	
+	.stylish__line {
+		margin-top: 40px;
+		width: 170px;
+	}
+	
+	.stylish__subtitle {
+		margin-top: 40px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+	
+	.download button {
+		margin-bottom: 40px;
+	}
+
 	.contact__form {
-		max-width: 992px;
-		margin-top: 72px;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
-	
-	.contact__info {
-		max-width: 475px;
+
+	.contact__message{
+		margin-left: 1px;
 	}
-	
-	.contact__info input {
-		width: 475px;
-	}
-	
-	textarea {
-		outline: none;
-		width: 475px;
-		height: 165px;
-	}
-	
-	.contact__button {
-		width: 318px;
-		height: 58px;
-	}
-	
-	.footer__copyright {
-		font-size: 16px;
+	.footer__icons img {
+
+		width: 25px;
 	}
 }
 
 
-@media (max-width:320px) {
-	.header__burger {
+@media (max-width:400px) {
+
+	.footer__icons img {
+
+		width: 12px;
+	}
+	/*.header__burger {
 		display: block;
 		position: relative;
 		width: 30px;
@@ -761,203 +830,7 @@ textarea {
 		font-size: 25px;
 		padding: 45px 0;
 		cursor: pointer;
-	}
-
-
-	.axit-download__container {
-		max-width: 320px;
-		margin: 0;
-		padding: 140px 15px 50px 15px;
-	}
-
-	.axit-download__logo {
-		display: none;
-	}
-
-	.axit-download__text {
-		max-width: 288px;
-		text-align: center;
-	}
-
-	.axit-download__title {
-		font-size: 36px;
-		line-height: 42px;
-		margin-bottom: 42px;
-	}
-
-	.axit-download__line {
-		width: 134px;
-		margin: 0 auto;
-	}
-
-	.axit-download__subtitle {
-		margin: 42px 0;
-		font-size: 14px;
-		line-height: 16px;
-		width: 288px;
-	}
-
-	.axit-download__button {
-		font-size: 18px;
-		line-height: 25px;
-		width: 288px;
-		margin-bottom: 56px;
-	}
-
-	.axit-download__form {
-		width: 288px;
-		height: 381px;
-		margin-bottom: 0;
-	}
-
-	.axit-download__form h2 {
-		font-size: 14px;
-		line-height: 19px;
-	}
-
-	.axit-download__info input {
-		width: 240px;
-		padding: 20px 0;
-	}
-
-	.axit-start {
-		width: 288px;
-		height: 60px;
-	}
-
-	.axit-download__foot {
-		height: 190px;
-	}
-
-	.foot__container {
-		max-width: 320px;
-		margin: 0 auto;
-		display: block;
-		padding: 0 15px;
-	}
-
-	.foot__text {
-		max-width: 288px;
-		text-align: center;
-	}
-
-	.foot__title{
-		margin-top: 31px;
-		font-size: 18px;
-		line-height: 25px;
-		margin-bottom: 13px;
-	}
-
-	.foot__subtitle {
-		font-size: 14px;
-		line-height: 16px;
-		margin-bottom: 34.17px;
-		text-align: center;
-	}
-
-	.footer__icons {
-		width: 300px;
-	;
-	}
-	.footer__icons img {
-		width: 23px;
-		margin-top: 30px
-	}
-
-	.stylish__body {
-		max-width: 320px;
-		padding: 0 15px;
-		margin: 0 auto;
-	}
-
-	.stylish__title {
-		font-size: 24px;
-		line-height: 28px;
-	}
-
-	.stylish__line {
-		margin-top: 70px;
-		width: 134px;
-	}
-
-	.stylish__subtitle {
-		font-size: 14px;
-		line-height: 16px;
-	}
-
-	.download button {
-		width: 287px;
-		height: 50px;
-	}
-
-	.contact__header {
-		margin: 40px 0 0 0;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-between;
-	}
-
-	.contact__title {
-		font-size: 24px;
-		line-height: 28px;
-	}
-
-	.contact__line {
-		margin-top: 70px;
-		width: 134px;
-	}
-
-	.contact__subtitle {
-		margin-top: 40px;
-		font-size: 14px;
-		line-height: 16px;
-		text-align: center;
-	}
-
-	.contact__form {
-		max-width: 320px;
-		padding: 0 15px;
-	}
-
-	.contact__info {
-		max-width: 288px;
-		height: 200px;
-	}
-
-	.contact__info input {
-		width: 288px;
-	}
-
-	textarea {
-		outline: none;
-		width: 288px;
-		height: 163px;
-		border: 1px solid white;
-		border-bottom: 1px solid #BDBDBD;
-		resize: none;
-	}
-
-	.contact__button-center {
-		display: flex;
-		justify-content: center;
-		margin-bottom: 50px;
-	}
-
-	.contact__button {
-		width: 288px;
-		height: 50px;
-	}
-	.footer {
-		padding-top: 37px 0 45px 0;
-
-	}
-
-	.footer__icons {
-		width: 288px;
-		padding: 0;
-		margin: 0;
-	}
+	}*/
 }
 
 
