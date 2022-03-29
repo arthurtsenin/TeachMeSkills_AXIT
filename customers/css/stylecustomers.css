@@ -157,7 +157,7 @@
 }
 
 
-@media (max-width:450px) {
+@media (max-width:320px) {
 	.customers__body {
 		max-width: 320px;
 		padding: 0;

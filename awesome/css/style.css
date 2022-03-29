@@ -128,7 +128,7 @@ color: #000000;
 	}
 
 }
-@media (max-width:450px) {
+@media (max-width:320px) {
 	.awesome__body {
 		max-width: 320px;
 	}

@@ -159,7 +159,7 @@
 
 }
 
-@media (max-width:450px) {
+@media (max-width:320px) {
 	.pricing {
 		padding: 18px;
 	}
