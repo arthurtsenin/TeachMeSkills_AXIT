@@ -765,7 +765,7 @@ ul {
 
 		width: 12px;
 	}
-	/*.header__burger {
+	.header__burger {
 		display: block;
 		position: relative;
 		width: 30px;
@@ -829,7 +829,7 @@ ul {
 		font-size: 25px;
 		padding: 45px 0;
 		cursor: pointer;
-	}*/
+	}
 }
 
 
