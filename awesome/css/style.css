@@ -131,6 +131,7 @@ color: #000000;
 @media (max-width:320px) {
 	.awesome__body {
 		max-width: 320px;
+		padding: 0 15px;
 	}
 	
 	.awesome__header {
@@ -159,7 +160,6 @@ color: #000000;
 	}
 
 	.awesome__column {
-		padding: 0 0 0 15px;
 		max-width: 288px;
 		margin-bottom: 58px;
 	}

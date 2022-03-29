@@ -216,7 +216,7 @@ margin: 30px 0px;
 		border-bottom: 10px solid white;
 		border-radius: 5px 5px 0 0;
 		position: relative;
-		top: 0px;
+		top: 2px;
 		left: 0px;
 	}
 	
@@ -228,12 +228,12 @@ margin: 30px 0px;
 		padding: 0;
 		flex-wrap: wrap;
 		justify-content: center;
+		text-align: center;
 		}
 
 	.tabs__contetn-left {
-		text-align: center;
-		padding: 20px;
-	}
+
+		padding: 20px;	}
 	
 	.tabs__content-left--title {
 		max-width: 460px;
@@ -254,7 +254,7 @@ margin: 30px 0px;
 	}
 	
 	.tabs__content-right img {
-		padding-bottom: 25px;
+
 		
 	}
 }
@@ -266,7 +266,7 @@ margin: 30px 0px;
 @media (max-width:320px) {
 	.tabs {
 		max-width: 320px;
-		padding: 0;
+		padding: 0 15px;
 	}
 	
 	.tabs__body {

@@ -186,7 +186,10 @@
 	.pricing__column {
 		max-width: 288px;
 		margin-top: 49.74px;
+		padding: 0 15px;
 	}
+
+
 	
 	.pricing__price li {	
 		width: 288px;
