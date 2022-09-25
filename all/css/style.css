@@ -1,0 +1,848 @@
+body {
+	font-family: 'Raleway';
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+header:before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 75px;
+	background-color: black;
+	z-index:9999;
+}
+
+.header__menu_container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+	position: relative;
+	z-index: 9999;
+}
+
+.header__body {
+	height: 75px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.header__logo {
+	font-size: 40px;
+	color: #FFFFFF;
+	display: flex;
+	position: relative;
+	z-index: 3;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.header__logo:hover {
+	transform: rotate(360deg);
+}
+
+.logo {
+	display: block;
+	color: #EC7979;
+	position: relative;
+	z-index: 6;
+}
+
+.header__menu {
+	font-family: 'Open Sans';
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 19px;
+	text-transform: capitalize;
+	color: white;
+	max-width: 600px;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__menu__list {
+	padding: 28px 25px;
+	max-width: 113px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.header__menu__list:hover {
+	background-color: #EC7979;
+}
+
+.header__menu__list:active{
+	background-color: #AB4949;
+}
+
+.axit-download {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	background: url(../assets/city.svg) 0 0/cover no-repeat fixed;
+	position: relative;
+	z-index: 3;
+}
+.axit-download::before {
+	display: block;
+	content: "";
+	background: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+}
+
+.axit-download__container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+	padding-top: 208px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.axit-download__logo {
+	display: inline-flex;
+	font-size: 70px;
+	color: white;
+	font-weight: 600;
+	margin-bottom: 72.88px;
+}
+
+.axit-download__text {
+	max-width: 670px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.axit-download__title {
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 56px;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	max-width: 640px;
+}
+
+.axit-download__line {
+	margin-top: 70px;
+	max-width: 170px;
+	padding: 0 95px;
+	height: 0px;
+	border: 1px solid #FFFFFF;
+	opacity: 0.5;
+}
+
+.axit-download__subtitle {
+	margin-top: 42px;
+	font-size: 18px;
+	line-height: 21px;
+	color: #FFFFFF;
+	max-width: 250px;
+}
+
+.axit-download__button {
+	font-family: 'Open Sans';
+	background: rgba(0, 0, 0, 0.2);
+	border: 1px solid white;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: capitalize;
+	color: #FFFFFF;
+	max-width: 270px;
+	padding: 0 75px ;
+	height: 58px;
+	margin-top: 73px;
+	cursor: pointer;
+	margin-bottom: 185px;
+}
+
+.axit-download__button:hover {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: capitalize;
+	color: #EC7979;
+	border: 2px solid #EC7979;
+}
+.axit-download__button:active {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: capitalize;
+	color: white;
+	background: #AB4949;
+	border: 2px solid #AB4949;
+}
+
+.axit-download__form {
+	font-family: 'Open Sans';
+	background-color: white;
+	max-width: 470px;
+	border-radius: 10px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-top: 20px;
+	height: 450px;
+	margin-left: 15px;
+}
+
+.axit-download__info {
+	padding: 0 50px;
+	flex: 0 1 auto;
+}
+
+.axit-download__form h2 {
+	padding: 0 50px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 33px;
+	text-transform: uppercase;
+	color: #333333;
+}
+
+.free {
+	color: #EC7979;;
+}
+
+.axit-download__info div {
+	border-bottom: 1px solid #BDBDBD;
+	margin-bottom: 35px;
+}
+
+.axit-start {
+	width: 100%;
+	height: 60px;
+	background: #EC7979;
+	border-radius: 0px 0px 10px 10px;
+	border: 1px solid #EC7979;
+	color: #FFFFFF;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.axit-start:hover {
+	background: #AB4949;
+	border-radius: 0px 0px 10px 10px;
+	border:1px solid #AB4949;
+}
+
+.axit-start:active {
+	background: #EC7979;
+	border-radius: 0px 0px 10px 10px;
+}
+
+
+.axit-download__foot {
+	padding: 15px 0;
+	background: #F8EFEF;
+	width: 100%;
+	margin-bottom: 99px;
+}
+
+.foot__container {
+	height: inherit;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.foot__text {
+	height: 100px;
+	max-width: 470px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.foot__title{
+	font-family: 'Open Sans';
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 33px;
+	text-transform: capitalize;
+	color: #333333;
+}
+
+.foot__subtitle {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: #86878B;
+}
+
+.stylish {
+	background: url(../assets/image.svg) 0 0/cover no-repeat fixed;
+	position: relative;
+	z-index: 3;
+	overflow: hidden;
+	height: 442px;
+	width: 100%;
+}
+
+.stylish::before {
+	content: "";
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+	height: 442px;
+}
+
+.stylish__body {
+	max-width: 1170px;
+	padding: 50px 15px;
+	margin: 0 auto;
+}
+
+.stylish__header {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.stylish__title {
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 42px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.stylish__line {
+	margin-top: 70px;
+	width: 170px;
+	height: 0px;
+	border: 1px solid #FFFFFF;
+}
+
+.stylish__subtitle {
+	margin-top: 40px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.download button {
+	background: rgba(0, 0, 0, 0.2);
+	border: 1px solid white;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: capitalize;
+	color: #FFFFFF;
+	font-family: 'Open Sans';
+	max-width: 370px;
+	padding: 10px 70px;
+	height: 58px;
+	margin-top: 73px;
+	cursor: pointer;
+}
+.download button:hover {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: capitalize;
+	color: #EC7979;
+	border: 2px solid #EC7979;
+}
+.download button:active {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: capitalize;
+	color: white;
+	background: #AB4949;
+	border: 2px solid #AB4949;
+}
+
+.contact__header {
+	margin-top: 110px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.contact__title {
+	font-family: 'Raleway';
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 42px;
+	text-transform: uppercase;
+	color: #000000;
+
+}
+
+.contact__line {
+	margin-top: 70px;
+	width: 170px;
+	height: 0px;
+	border: 1px solid #EC7979;
+}
+
+.contact__subtitle {
+	margin-top: 40px;
+	font-family: 'Raleway';
+	font-weight: 400;
+	font-size: 18px;
+	color: #86878B;
+}
+
+.contact__form {
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+	margin-top: 89px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact__info {
+	width: 50%;
+}
+
+.contact__info div {
+	padding: 5px 0 25px 0;
+	border: 1px solid white;
+	border-bottom: 1px solid #BDBDBD;
+	margin-bottom: 30px;
+}
+
+.contact__info input {
+	width: 100%;
+}
+
+.contact__message {
+	height: 215px;
+	margin-left: 20px;
+	width: 50%;
+	outline: none;
+	border: 1px solid white;
+	border-bottom: 1px solid #BDBDBD;
+}
+.contact__message textarea {
+	resize: none;
+	width: 100%;
+}
+.contact__button-center {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.contact__button {
+	font-family: 'Open Sans';
+	background: #EC7979;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	text-transform: capitalize;
+	padding: 15px 70px;
+	margin-top: 38px;
+	max-width: 370px;
+	height: 58px;
+	color: #FFFFFF;
+}
+
+.contact__button:hover {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: capitalize;
+	color: white;
+	background: #AB4949;
+}
+
+.contact__button:active {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: capitalize;
+	color: white;
+	background: #EC7979;
+}
+
+.footer {
+	width: 100%;
+	padding: 40px 0;
+	background: #000000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer__icons {
+	max-width: 600px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__icons img {
+	max-width: 45px;
+}
+
+.footer__copyright {
+	margin-top: 32px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width:1024px) {
+	.axit-download__container {
+		max-width: 1024px;
+	}
+	
+	.axit-download__text {
+		max-width: 454px;
+		margin-left: 115px;
+	}
+	.axit-download__logo {
+		margin-bottom: 54px;
+	}
+	
+	.axit-download__title {
+		font-size: 36px;
+		line-height: 42px;
+	}
+	
+	.axit-download__line {
+		margin-top: 20px;
+		max-width: 115px;
+	}
+	
+	.axit-download__subtitle {
+		margin-top: 32px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+	
+	.axit-download__button {
+		margin-top: 40px;
+		margin-bottom: 100px;
+	}
+		
+	.axit-download__form {
+		max-width: 398px;
+	}
+	
+	.axit-download__info {
+		padding: 0 20px;
+	}
+	
+	.axit-download__form h2 {
+		font-size: 18px;
+		line-height: 25px;
+	}
+
+
+	.foot__container {
+		max-width: 1024px;
+		padding: 0 15px;
+	}
+	.foot__text {
+		padding: 13px 0;
+		max-width: 402px;
+	}
+	
+	.foot__title{
+		font-size: 18px;
+		line-height: 25px;
+	}
+	
+	.foot__subtitle {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	
+	.footer__icons img {
+		margin-right: 20px;
+	}
+		.stylish {
+			height: 330px;
+		}
+	
+	.stylish__body {
+		max-width: 1024px;
+		padding: 20px 15px;
+
+	}
+	
+	.stylish__header {
+		margin-top: 20px;
+	}
+	
+	.stylish__title {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	
+	.stylish__line {
+		margin-top: 40px;
+		width: 170px;
+	}
+	
+	.stylish__subtitle {
+		margin-top: 40px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+	
+	.download button {
+		margin-bottom: 40px;
+	}
+}
+
+@media (max-width:960px) {
+	.axit-download__container {
+		max-width: 1024px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	.axit-download__text {
+		max-width: 454px;
+		margin: 0 auto;
+		align-items: center;
+		text-align: center;
+
+
+	}
+	.axit-download__logo {
+		margin-bottom: 54px;
+	}
+	
+	.axit-download__title {
+		font-size: 36px;
+		line-height: 42px;
+	}
+	
+	.axit-download__line {
+		margin-top: 20px;
+		max-width: 115px;
+	}
+	
+	.axit-download__subtitle {
+		margin-top: 32px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+	
+	.axit-download__button {
+		margin-top: 40px;
+		margin-bottom: 30px;
+	}
+	
+	.axit-download__form {
+		max-width: 398px;
+		margin-bottom: 20px;
+	}
+	
+	.axit-download__info {
+		padding: 0 20px;
+	}
+	
+	.axit-download__form h2 {
+		font-size: 18px;
+		line-height: 25px;
+	}
+	.foot__container{
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.foot__text {
+		height: 100px;
+		padding: 13px 0;
+		max-width: 402px;
+
+	}
+	
+	.foot__title{
+		font-size: 18px;
+		line-height: 25px;
+	}
+	
+	.foot__subtitle {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	
+		.stylish {
+			height: 330px;
+		}
+	
+	.stylish__body {
+		max-width: 1024px;
+		padding: 20px 15px;
+	}
+	
+	.stylish__header {
+		margin-top: 20px;
+	}
+	
+	.stylish__title {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	
+	.stylish__line {
+		margin-top: 40px;
+		width: 170px;
+	}
+	
+	.stylish__subtitle {
+		margin-top: 40px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+	
+	.download button {
+		margin-bottom: 40px;
+	}
+
+	.contact__form {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.contact__message{
+		margin-left: 1px;
+	}
+	.footer__icons img {
+		width: 25px;
+	}
+
+	.contact__info {
+		width: 100%;
+	}
+
+	.contact__message {
+		width: 100%;
+	}
+}
+
+@media (max-width:627px) {
+	.axit-download__logo {
+		display: none;
+	}
+
+	.axit-download__text {
+	margin-top: 0;
+	}
+
+	.footer__icons img {
+		width:25px;
+		margin: 5px;
+	}
+	.download button {
+	margin-top: 25px;
+	}
+	.header__burger {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		position: relative;
+		z-index: 3;
+	}
+	.header__burger span {
+		position: absolute;
+		background-color: white;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+	}
+	.header__burger::before{
+		content: "";
+		background-color: white;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		top: 0;
+	}
+
+	.header__burger:after{
+		content: "";
+		background-color: white;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		bottom: 0;
+	}
+	
+	.header__menu {
+		text-align: center;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.254);
+		padding-top: 75px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.header__menu:before {
+		content: "";
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 75px;
+		background-color: black;
+		z-index:9999;
+	}
+
+	.header__menu__list {
+		font-size: 25px;
+		padding: 45px 0;
+		cursor: pointer;
+	}
+}
+
+
