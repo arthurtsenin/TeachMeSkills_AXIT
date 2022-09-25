@@ -154,11 +154,10 @@
 	.customers__column {
 		margin: 0 15px;
 	}
-
 }
 
 
-@media (max-width:400px) {
+@media (max-width:320px) {
 	.customers__body {
 		max-width: 320px;
 		padding: 0;

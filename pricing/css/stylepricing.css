@@ -43,14 +43,12 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-
 }
 
 
 .pricing__price {
 	display: flex;
 	flex-direction: column;
-
 }
 
 .pricing__column {
@@ -82,7 +80,6 @@
 	color: #86878B;
 	font-style: normal;
 	width: 100%;
-
 }
 
 .pricing__price li:first-child {
@@ -162,8 +159,7 @@
 
 }
 
-
-@media (max-width:400px) {
+@media (max-width:320px) {
 	.pricing {
 		padding: 18px;
 	}
@@ -190,7 +186,10 @@
 	.pricing__column {
 		max-width: 288px;
 		margin-top: 49.74px;
+		padding: 0 15px;
 	}
+
+
 	
 	.pricing__price li {	
 		width: 288px;
